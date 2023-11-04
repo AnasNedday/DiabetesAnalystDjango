@@ -1,0 +1,32 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Inclure Bootstrap CSS -->
+</head>
+<body>
+    <div class="container text-center" style="margin-top: 40px;">
+        <h1 class="display-4">DIABETES PREDICTION SYSTEM</h1>
+        <p class="lead">Welcome to our prediction system.</p>
+        <form action="predict">
+            <button type="submit" class="btn btn-primary btn-lg mt-3">GO</button>
+        </form>
+    </div>
+
+    <style type="text/css">
+
+        body {
+            background-image: url("{% static 'DiabetesPrediction/images/img.png' %}");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Inclure Bootstrap JS -->
+</body>
+</html>
